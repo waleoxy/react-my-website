@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap');
 
 :root{
-  --primaryColor: #4e05ad;
+  --primaryColor: #5fb7ea;
   --primaryRGBA: rgba(0, 0, 0, 0.3);
   --mainGrey: #fafafa;
   --darkGrey: #5f5e5e;
@@ -9,6 +9,10 @@
   --mainBlack: #222;
   --mainTransition:all 0,3s ease-in-out;
   --mainSpacing: 0.3rem;
+}
+
+text-main{
+  color: var(--primaryColor);
 }
 
 .text-title{
@@ -21,4 +25,23 @@
 body{
   font-family: 'Open Sans', sans-serif !important;
   background: var(--mainGrey) !important;
+}
+.linktext{
+  padding: 0.5rem 1rem;
+  font-size: 1.0rem;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainWhite);
+  text-transform: uppercase;
+  background: var(--darkGrey);
+  display: inline-block;
+  outline: 2px solid var(--primaryColor);
+  outline-offset: 4px;
+  border: none;
+  transition: var(--mainTransition);
+}
+.linktext:hover{
+  background: var(--primaryColor);
+  text-decoration: none;
+  color: var(--mainWhite);
+  outline-color: var(--darkGrey);
 }

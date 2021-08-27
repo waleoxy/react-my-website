@@ -20,7 +20,6 @@ class ProductProvider extends Component{
     
     componentDidMount(){
 
-
         this.setWorks(items);
     }
     setWorks = (products) =>{

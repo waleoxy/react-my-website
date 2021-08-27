@@ -1,27 +1,28 @@
 import React, { Component } from 'react'
 import styled from "styled-components";
-import {FaAndroid, FaReact, FaJava} from "react-icons/fa";
+import { FaAndroid, FaReact, FaJava } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si"
 
 export default class Skills extends Component {
-    state={
-        skillsSet:[
+    state = {
+        skillsSet: [
             {
                 id: 1,
-                icon: <FaAndroid/>,
+                icon: <FaAndroid />,
                 title: "Android programming",
-                text:"Development of android apps, practical knoledge of use of firebase/noSQL databases, SQlite, ViewModel, RecyclerView..."
+                text: "Development of android apps, practical knoledge of use of firebase/noSQL databases, SQlite, ViewModel, RecyclerView..."
             },
             {
                 id: 2,
-                icon: <FaReact/>,
+                icon: <FaReact />,
                 title: "Reactjs programming",
-                text:"Front End web based application using reactjs, practical knowledge of javascripts, bootstrap,css/sass, react-router, redux..."
+                text: "Front End web based application using reactjs, practical knowledge of javascripts, bootstrap,css/sass, react-router, redux..."
             },
             {
                 id: 3,
-                icon: <FaJava/>,
+                icon: <FaJava />,
                 title: "Java programming",
-                text:"Programming in Java: Development of desktop apps using scene builder"
+                text: "Programming in Java: Development of desktop apps using scene builder"
             }
         ]
     };
@@ -29,30 +30,30 @@ export default class Skills extends Component {
     render() {
         return (
             <SkillsWrapper>
-              <div className="container">
-               <div className="row">
-               {
-                   this.state.skillsSet.map(item =>{
-                       return (
-                           <div className="col-10 mx auto col-sm-6 col-md-4
+                <div className="container">
+                    <div className="row">
+                        {
+                            this.state.skillsSet.map(item => {
+                                return (
+                                    <div className="col-10 mx auto col-sm-6 col-md-4
                             text-center my-3" key={item.id}>
-                            <div className="skills-icon">
-                             {item.icon}
-                            </div>
-                            <div className="mt-3 text-capitalize">
-                            {item.title}
-                            </div>
-                            <div className="mt-3">
-                             {item.text}
-                            </div>
-                       
-                             </div>)
-                   })
-               }
+                                        <div className="skills-icon">
+                                            {item.icon}
+                                        </div>
+                                        <div className="mt-3 text-capitalize">
+                                            {item.title}
+                                        </div>
+                                        <div className="mt-3">
+                                            {item.text}
+                                        </div>
 
-               </div>
-              </div>
-                
+                                    </div>)
+                            })
+                        }
+
+                    </div>
+                </div>
+
             </SkillsWrapper>
         )
     }

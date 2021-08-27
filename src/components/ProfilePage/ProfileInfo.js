@@ -1,6 +1,6 @@
 import React from 'react';
 import Title from "../Title";
-import profileBcg1 from "../../images/profileBcg1.jpg";
+import profileBcg from "../../images/profileBcg.jpg";
 
 export default function ProfileInfo() {
     return (
@@ -8,7 +8,7 @@ export default function ProfileInfo() {
             <div className="container">
                 <div className="row">
                     <div className="col-10 mx-auto col-md-6 my-3">
-                        <img src={profileBcg1} 
+                        <img src={profileBcg} 
                         className="img-fluid img-thumbnail"
                         style={{background: "var(--mainGrey)", border: "4px"}}
                          alt="pix"/>

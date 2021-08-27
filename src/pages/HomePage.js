@@ -1,14 +1,14 @@
 import React from 'react'
 import Hero from "../components/Hero"
 import { Link } from "react-router-dom"
-import mainBcg from "../images/mainBcg.jpg1.jpg";
+import myFamily from "../images/myFamily.jpg";
 import Skills from "../components/HomePage/Skills";
 import FearturedWork from "../components/HomePage/FeaturedWork";
 
 export default function HomePage() {
     return (
         <>
-           <Hero title = "Reactjs by Waleoxy" max="true" img = {mainBcg}>
+           <Hero title = "Website by Reactjs" max="true" img = {myFamily}>
             <Link className="linktext" to="/works"
              style={{margin: "2rem"}}> 
              my works 

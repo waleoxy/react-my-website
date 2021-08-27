@@ -81,4 +81,4 @@ const WorkWrapper = styled.div`
     letter-spacing:2px;
     text-transform: uppercase;
 }
-`;
+`
